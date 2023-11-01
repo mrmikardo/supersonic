@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export default async function About() {
   return (
     <div className='flex w-full flex-col items-center justify-center'>
