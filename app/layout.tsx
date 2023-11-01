@@ -29,7 +29,7 @@ export default async function RootLayout({
         {/* @ts-expect-error Async Server Component */}
         <Navbar />
         <Suspense>
-          <main className='w-full'>{children}</main>
+          <main className='w-full pb-8'>{children}</main>
         </Suspense>
         {/* @ts-expect-error Async Server Component */}
         <Footer />
