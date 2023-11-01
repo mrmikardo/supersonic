@@ -1,11 +1,9 @@
-import clsx from 'clsx';
 import Price from './price';
 
 const Label = ({
   title,
   amount,
   currencyCode,
-  position = 'bottom',
 }: {
   title: string;
   amount: string;
