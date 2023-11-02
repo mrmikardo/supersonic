@@ -7,7 +7,7 @@ export default async function Navbar() {
             Tees
           </a>
           |
-          <a href='./about' className='hover:line-through'>
+          <a href='/about' className='hover:line-through'>
             About
           </a>
         </li>
