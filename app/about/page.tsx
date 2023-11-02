@@ -3,7 +3,7 @@ export const runtime = 'edge';
 export default async function About() {
   return (
     <div className='flex w-full flex-col items-center justify-center'>
-      <div className='flex w-1/3 flex-col gap-2 self-center text-justify'>
+      <div className='flex flex-col gap-2 self-center px-4 text-justify md:w-1/3'>
         <p>
           David, Jack and Tristan founded Supersonic in 2023. All three share a
           love for well-crafted, beautiful clothing which brings joy to its
