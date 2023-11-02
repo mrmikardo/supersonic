@@ -5,24 +5,36 @@ export default async function About() {
     <div className='flex w-full flex-col items-center justify-center'>
       <div className='flex w-1/3 flex-col gap-2 self-center text-justify'>
         <p>
-          Bacon ipsum dolor amet doner shoulder corned beef, pig sausage
-          turducken kevin swine. Ribeye strip steak andouille tri-tip landjaeger
-          bacon swine chuck picanha pork chop short loin biltong prosciutto
-          pancetta. Flank porchetta turducken, meatloaf pastrami spare ribs
-          buffalo short loin hamburger pancetta ribeye tenderloin boudin.
+          David, Jack and Tristan founded Supersonic in 2023. All three share a
+          love for well-crafted, beautiful clothing which brings joy to its
+          wearers. Supersonic aims to produce apparel which sports simple,
+          vibrant, hand-drawn designs.
         </p>
         <br />
         <p>
-          Spare ribs venison prosciutto, tri-tip bresaola picanha buffalo jowl
-          ham filet mignon biltong. Pig short ribs salami pork loin. Ball tip
-          jowl drumstick shoulder meatloaf turkey.
+          David has been making artwork across a wide variety of media for many
+          years, influenced by the space-age comic books and novels he grew up
+          with. The 1960s were a time of hope and optimism; by the year 2000, we
+          believed, humanity would spread to the stars and it would be possible
+          to fly from London to Tokyo for the afternoon. By the end of the
+          decade, NASA had put a man on the moon and Concorde had flown its
+          first successful test flight. Supersonic aspires to bring a little bit
+          of that 60s vision to contemporary living.
         </p>
         <br />
         <p>
-          Chicken kielbasa pig, ham landjaeger meatball short ribs shoulder
-          t-bone bresaola tri-tip tail short loin picanha. Pork chop short loin
-          strip steak buffalo. Buffalo filet mignon porchetta fatback strip
-          steak, andouille boudin leberkas meatball jowl shankle.
+          All of Supersonic’s designs are produced by David in his home studio
+          before being printed onto high-quality 100% cotton tees. We aim to
+          provide a delightful experience to our customers — if you’d like to
+          share any feedback or comments, please do feel free to reach out to us
+          at{' '}
+          <a
+            className='underline'
+            href='mailto:supersonic.clothingldn@gmail.com'
+          >
+            supersonic.clothingldn@gmail.com
+          </a>
+          .
         </p>
       </div>
     </div>
