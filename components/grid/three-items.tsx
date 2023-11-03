@@ -1,5 +1,9 @@
 import { GridTileImage } from '@/components/grid/tile';
-import { getCollectionProducts } from '@/lib/shopify';
+import {
+  getCollectionProducts,
+  getCollections,
+  getProducts,
+} from '@/lib/shopify';
 import type { Product } from '@/lib/shopify/types';
 import Link from 'next/link';
 
@@ -35,10 +39,12 @@ function ThreeItemGridItem({
 
 export async function ThreeItemGrid() {
   const homepageItems = await getCollectionProducts({
-    collection: 'launch-issue',
+    collection: 'issue-one',
   });
+  const products = await getProducts({});
 
   console.log('homepageItems', homepageItems);
+  console.log('products', products);
 
   if (!homepageItems[0] || !homepageItems[1] || !homepageItems[2]) return null;
 
