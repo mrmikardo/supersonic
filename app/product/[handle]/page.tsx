@@ -20,8 +20,6 @@ export async function generateMetadata({
 
   if (!product) return notFound();
 
-  console.log('product', product)
-
   const { url, width, height, altText: alt } = product.featuredImage || {};
   const indexable = !product.tags.includes(HIDDEN_PRODUCT_TAG);
 
@@ -99,10 +97,6 @@ export default async function ProductPage({
             <ProductDescription product={product} />
           </div>
         </div>
-        <Suspense>
-          {/* @ts-expect-error Async Server Component */}
-          <RelatedProducts id={product.id} />
-        </Suspense>
       </div>
     </>
   );
