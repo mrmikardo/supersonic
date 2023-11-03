@@ -38,6 +38,8 @@ export async function ThreeItemGrid() {
     collection: 'launch-issue',
   });
 
+  console.log('homepageItems', homepageItems);
+
   if (!homepageItems[0] || !homepageItems[1] || !homepageItems[2]) return null;
 
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;

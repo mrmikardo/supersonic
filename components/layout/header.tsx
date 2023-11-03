@@ -1,7 +1,6 @@
 import Cart from '@/components/cart';
 import OpenCart from '@/components/cart/open-cart';
 import { Suspense } from 'react';
-import Instagram from '@/components/icons/instagram';
 import Logo from '@/components/logo';
 import Link from 'next/link';
 
@@ -13,7 +12,6 @@ export default async function Header() {
         <Logo />
       </Link>
       <div className='flex items-center justify-center gap-8 px-12 text-gray-700'>
-        <Instagram />
         <div className='flex justify-end md:w-1/3'>
           <Suspense fallback={<OpenCart />}>
             {/* @ts-expect-error Async Server Component */}
