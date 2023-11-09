@@ -1,9 +1,36 @@
-export const runtime = 'edge';
+'use client';
+
+import { motion } from 'framer-motion';
+
+// export const runtime = 'edge';
 
 export default async function About() {
   return (
-    <div className='flex w-full flex-col items-center justify-center'>
-      <div className='flex flex-col gap-2 self-center px-4 text-justify md:w-3/4 lg:w-1/3'>
+    <div className='grid w-full grid-cols-3'>
+      <div className='flex flex-col items-end gap-4 bg-blue-500 pr-4'>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ x: -50, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+          className='bg-red-500 p-4'
+        >
+          Hey
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ x: -80, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            type: 'spring',
+            stiffness: 300,
+            damping: 30,
+          }}
+          className='bg-red-500 p-4'
+        >
+          Hey again
+        </motion.div>
+      </div>
+      <div className='flex flex-col gap-2 self-center px-4 text-justify'>
         <p>
           David, Jack and Tristan founded Supersonic in 2023. All three share a
           love for well-crafted, beautiful clothing which brings joy to its
@@ -37,6 +64,7 @@ export default async function About() {
           .
         </p>
       </div>
+      <div className='bg-blue-500'>This is another image</div>
     </div>
   );
 }
