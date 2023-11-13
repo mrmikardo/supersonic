@@ -25,16 +25,16 @@ export default async function RootLayout({
   return (
     <html lang='en' className={workSans.className}>
       <body className='flex min-h-screen flex-col items-center gap-16'>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4TFHNVLC3Y" />
-      <Script id="google-analytics">
-        {`
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-4TFHNVLC3Y' />
+        <Script id='google-analytics'>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
           gtag('config', 'G-4TFHNVLC3Y');
         `}
-      </Script>
+        </Script>
         {/* @ts-expect-error Async Server Component */}
         <Header />
         {/* @ts-expect-error Async Server Component */}
