@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Work_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/nav';
@@ -24,6 +25,16 @@ export default async function RootLayout({
   return (
     <html lang='en' className={workSans.className}>
       <body className='flex min-h-screen flex-col items-center gap-16'>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4TFHNVLC3Y" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-4TFHNVLC3Y');
+        `}
+      </Script>
         {/* @ts-expect-error Async Server Component */}
         <Header />
         {/* @ts-expect-error Async Server Component */}
