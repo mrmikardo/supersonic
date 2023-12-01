@@ -10,8 +10,9 @@ import Footer from '@/components/layout/footer';
 const workSans = Work_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Supersonic',
-  description: 'Web site for supersonic apparel',
+  title: 'Supersonic Clothing',
+  description:
+    'Web site for urban apparel. Stylish tees with custom designs. Join the supersonic club today.',
   openGraph: {
     type: 'website',
   },
